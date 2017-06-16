@@ -55,7 +55,7 @@ public class TestTilesPlugin extends TestMockBase {
 
 
     public static void main(String args[]) {
-        junit.textui.TestRunner.main
+        junit.awtui.TestRunner.main
             (new String[] { TestTilesPlugin.class.getName() } );
     }
 

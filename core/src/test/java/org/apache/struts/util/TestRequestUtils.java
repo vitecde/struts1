@@ -49,7 +49,7 @@ public class TestRequestUtils extends TestMockBase {
     }
 
     public static void main(String[] args) {
-        junit.textui.TestRunner.main(new String[] {
+        junit.awtui.TestRunner.main(new String[] {
                 TestRequestUtils.class.getName()
             });
     }

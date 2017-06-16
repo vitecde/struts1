@@ -63,7 +63,7 @@ public class TestRequestUtilsPopulate extends TestMockBase {
      * @param theArgs the arguments. Not used
      */
     public static void main(String[] theArgs) {
-        junit.textui.TestRunner.main(
+        junit.awtui.TestRunner.main(
             new String[] { TestRequestUtilsPopulate.class.getName()});
     }
 

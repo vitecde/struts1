@@ -55,7 +55,7 @@ public class TestHtmlTag extends TestCase {
      * @param theArgs the arguments. Not used
      */
     public static void main(String[] theArgs) {
-        junit.textui.TestRunner.main(new String[] { TestHtmlTag.class.getName() });
+        junit.awtui.TestRunner.main(new String[] { TestHtmlTag.class.getName() });
     }
 
     /**

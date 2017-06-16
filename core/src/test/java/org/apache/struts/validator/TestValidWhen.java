@@ -57,7 +57,7 @@ public class TestValidWhen extends TestCase {
      * @param theArgs the arguments. Not used
      */
     public static void main(String[] theArgs) {
-        junit.textui.TestRunner.main(new String[] { TestValidWhen.class.getName() });
+        junit.awtui.TestRunner.main(new String[] { TestValidWhen.class.getName() });
     }
 
     /**

@@ -23,32 +23,16 @@ package org.apache.struts.mock;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import javax.servlet.Filter;
-import javax.servlet.FilterRegistration;
-import javax.servlet.FilterRegistration.Dynamic;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.Servlet;
 import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.SessionCookieConfig;
-import javax.servlet.SessionTrackingMode;
-import javax.servlet.ServletRegistration;
-import javax.servlet.descriptor.JspConfigDescriptor;
 
 import java.io.InputStream;
-
-import java.lang.Class;
-import java.lang.ClassLoader;
-import java.lang.IllegalArgumentException;
-import java.lang.IllegalStateException;
-import java.lang.UnsupportedOperationException;
 
 import java.net.URL;
 
 import java.util.Enumeration;
-import java.util.EventListener;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -104,10 +88,6 @@ public class MockServletContext implements ServletContext {
     }
 
     public ServletContext getContext(String uripath) {
-        throw new UnsupportedOperationException();
-    }
-
-    public String getContextPath() {
         throw new UnsupportedOperationException();
     }
 
@@ -201,140 +181,5 @@ public class MockServletContext implements ServletContext {
         } else {
             attributes.put(name, value);
         }
-    }
-
-    public JspConfigDescriptor getJspConfigDescriptor() {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public ClassLoader getClassLoader() {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public void declareRoles(String... roleNames) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public <T extends EventListener> T createListener(Class<T> c) throws ServletException {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public <T extends EventListener> void addListener(T t) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public void addListener(String className) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public void addListener(Class<? extends EventListener> listenerClass) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public Set<SessionTrackingMode> getEffectiveSessionTrackingModes() {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public Set<SessionTrackingMode> getDefaultSessionTrackingModes() {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public void setSessionTrackingModes(Set<SessionTrackingMode> sessionTrackingModes) throws IllegalStateException, IllegalArgumentException {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public SessionCookieConfig getSessionCookieConfig() {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public Map<String,? extends FilterRegistration> getFilterRegistrations() {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public FilterRegistration getFilterRegistration(String filterName) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public <T extends Filter> T createFilter(Class<T> c) throws ServletException {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public FilterRegistration.Dynamic addFilter(String filterName, Class<? extends Filter> filterClass) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public FilterRegistration.Dynamic addFilter(String filterName, Filter filter) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public FilterRegistration.Dynamic addFilter(String filterName, String className) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public Map<String,? extends ServletRegistration> getServletRegistrations() {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public ServletRegistration getServletRegistration(String servletName) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public <T extends Servlet> T createServlet(Class<T> c) throws ServletException {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public ServletRegistration.Dynamic addServlet(String servletName, Servlet servlet) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public ServletRegistration.Dynamic addServlet(String servletName, Class<? extends Servlet> servletClass) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public ServletRegistration.Dynamic addServlet(String servletName, String className) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public boolean setInitParameter(String name, String value) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public int getEffectiveMinorVersion() {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public int getEffectiveMajorVersion() {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public String getVirtualServerName() {
-        // TODO
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 }

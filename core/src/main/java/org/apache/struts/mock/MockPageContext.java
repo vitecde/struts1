@@ -20,7 +20,6 @@
  */
 package org.apache.struts.mock;
 
-import javax.el.ELContext;
 import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
@@ -30,8 +29,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.PageContext;
-import javax.servlet.jsp.el.VariableResolver;
-import javax.servlet.jsp.el.ExpressionEvaluator;
 import javax.servlet.jsp.tagext.BodyContent;
 
 import java.io.IOException;
@@ -533,22 +530,6 @@ public class MockPageContext extends PageContext {
     }
 
     public void include(String path) {
-        throw new UnsupportedOperationException();
-    }
-
-    public void include(String relativeUrlPath, boolean flush) {
-        throw new UnsupportedOperationException();
-    }
-
-    public VariableResolver getVariableResolver() {
-        throw new UnsupportedOperationException();
-    }
-
-    public ELContext getELContext() {
-        throw new UnsupportedOperationException();
-    }
-
-    public ExpressionEvaluator getExpressionEvaluator() {
         throw new UnsupportedOperationException();
     }
 

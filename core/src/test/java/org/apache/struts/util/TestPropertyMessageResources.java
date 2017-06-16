@@ -45,7 +45,7 @@ public class TestPropertyMessageResources extends TestCase {
     }
 
     public static void main(String[] args) {
-        junit.textui.TestRunner.main(new String[] {
+        junit.awtui.TestRunner.main(new String[] {
                 TestPropertyMessageResources.class.getName()
             });
     }

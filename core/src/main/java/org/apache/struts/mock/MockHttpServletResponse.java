@@ -20,7 +20,6 @@
  */
 package org.apache.struts.mock;
 
-import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -28,7 +27,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import java.util.Collection;
 import java.util.Locale;
 
 /**
@@ -171,46 +169,7 @@ public class MockHttpServletResponse implements HttpServletResponse {
         throw new UnsupportedOperationException();
     }
 
-    public String getContentType() {
-        throw new UnsupportedOperationException();
-    }
-
     public void setLocale(Locale locale) {
         throw new UnsupportedOperationException();
     }
-
-    public void setCharacterEncoding(String enc) {
-        throw new UnsupportedOperationException();
-    }
-
-    public Collection<String> getHeaderNames() {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public String getHeader(String name) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public Collection<String> getHeaders(String name) {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public void logout() throws ServletException {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public int getStatus() {
-        // TODO
-        throw new UnsupportedOperationException("Not supported.");
-    }
-
-    public void setContentLengthLong(long arg0) {
-        // TODO
-        throw new UnsupportedOperationException("Not implemented yet");
-    }
-
 }
