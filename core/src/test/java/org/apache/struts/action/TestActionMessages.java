@@ -57,7 +57,7 @@ public class TestActionMessages extends TestCase {
      * @param theArgs the arguments. Not used
      */
     public static void main(String[] theArgs) {
-        junit.awtui.TestRunner.main(new String[] {
+        junit.textui.TestRunner.main(new String[] {
                 TestActionMessages.class.getName()
             });
     }

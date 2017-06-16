@@ -20,16 +20,29 @@
  */
 package org.apache.struts.mock;
 
+import javax.servlet.AsyncContext;
+import javax.servlet.DispatcherType;
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.servlet.http.HttpUpgradeHandler;
+import javax.servlet.http.Part;
 
 import java.io.BufferedReader;
+import java.io.IOException;
+
+import java.lang.IllegalStateException;
 
 import java.security.Principal;
 
+import java.util.Collection;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Locale;
@@ -425,4 +438,100 @@ public class MockHttpServletRequest implements HttpServletRequest {
     public void setCharacterEncoding(String name) {
         throw new UnsupportedOperationException();
     }
+
+    public int getLocalPort() {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getLocalAddr() {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getLocalName() {
+        throw new UnsupportedOperationException();
+    }
+
+    public int getRemotePort() {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getRemoteName() {
+        throw new UnsupportedOperationException();
+    }
+
+    public Part getPart(String name) throws IOException, IllegalStateException, ServletException {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public Collection<Part> getParts() throws IOException, IllegalStateException, ServletException {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public void logout() throws ServletException {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public void login(String username, String password) throws ServletException {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public boolean authenticate(HttpServletResponse response) throws IOException, ServletException {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public DispatcherType getDispatcherType() {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public AsyncContext getAsyncContext() {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public boolean isAsyncSupported() {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public boolean isAsyncStarted() {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public AsyncContext startAsync(ServletRequest servletRequest, ServletResponse servletResponse) {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public AsyncContext startAsync() {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public ServletContext getServletContext() {
+        // TODO
+        throw new UnsupportedOperationException("Not supported.");
+    }
+
+    public <T extends HttpUpgradeHandler> T upgrade(Class<T> arg0) throws IOException, ServletException {
+        // TODO
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    public String changeSessionId() {
+        // TODO
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    public long getContentLengthLong() {
+        // TODO
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
 }

@@ -40,7 +40,7 @@ public class TestActionConfigMatcher extends TestMockBase {
     }
 
     public static void main(String[] args) {
-        junit.awtui.TestRunner.main(new String[] {
+        junit.textui.TestRunner.main(new String[] {
                 TestActionConfigMatcher.class.getName()
             });
     }

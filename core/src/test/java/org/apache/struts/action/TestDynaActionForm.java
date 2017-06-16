@@ -90,7 +90,7 @@ public class TestDynaActionForm extends TestDynaActionFormClass {
      * @param theArgs the arguments. Not used
      */
     public static void main(String[] theArgs) {
-        junit.awtui.TestRunner.main(new String[] {
+        junit.textui.TestRunner.main(new String[] {
                 TestDynaActionForm.class.getName()
             });
     }

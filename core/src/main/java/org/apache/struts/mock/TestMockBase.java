@@ -64,7 +64,7 @@ public class TestMockBase extends TestCase {
     }
 
     public static void main(String[] args) {
-        junit.awtui.TestRunner.main(new String[] { TestMockBase.class.getName() });
+        junit.textui.TestRunner.main(new String[] { TestMockBase.class.getName() });
     }
 
     public static Test suite() {
